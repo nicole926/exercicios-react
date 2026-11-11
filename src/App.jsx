@@ -1,10 +1,14 @@
 import './App.css'
-import Login from './components/Login'
+import Tarefas2 from './components/Tarefas2'
+
 
 function App() {
+
+  const tarefas = ['estudar React', 'praticar JavaScript', 'revisar CSS']
+
   return (
     <div className="App">
-      <Login />
+      <Tarefas2 tarefas={tarefas} />
     </div>
   )
 }
