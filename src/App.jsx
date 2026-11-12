@@ -1,14 +1,14 @@
 import './App.css'
-import Tarefas2 from './components/Tarefas2'
-
+import { useState } from 'react'
+import ControleTemperatura from './components/ControleTemperatura'
+import MostrarTemperatura from './components/MostrarTemperatura'
 
 function App() {
-
-  const tarefas = ['estudar React', 'praticar JavaScript', 'revisar CSS']
-
+  const [temperatura, setTemperatura] = useState(0)
   return (
     <div className="App">
-      <Tarefas2 tarefas={tarefas} />
+      <ControleTemperatura temperatura={temperatura} setTemperatura={setTemperatura} />
+      <MostrarTemperatura temperatura={temperatura} />
     </div>
   )
 }
